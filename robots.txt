@@ -2,7 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://nexesvision.vercel.app/sitemap.xml
+Sitemap: https://nexesvision.online/sitemap.xml
+Sitemap: https://nexesvision.online/sitemap-main.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1 
