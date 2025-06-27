@@ -1,0 +1,17 @@
+{
+  "name": "nexes-vision-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for NEXES VISION",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve ."
+  },
+  "keywords": ["portfolio", "business", "personal-website"],
+  "author": "NEXES VISION",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+} 
