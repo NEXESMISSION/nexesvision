@@ -32,7 +32,7 @@
     <link rel="canonical" href="https://nexesvision.online/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
     
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -195,6 +195,44 @@
       }
     }
     </script>
+    
+    <!-- Products & Services Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "TraceMate - Drawing Tool",
+          "description": "A tool to help people draw better through tracing with their phone camera. Improve your drawing skills and create beautiful artwork with ease.",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "10.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2024-12-31"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 2,
+          "name": "Digital Entrepreneur's Toolkit",
+          "description": "A comprehensive digital guide with templates, strategies, and tools for launching and scaling your online business. Includes lifetime access to future updates.",
+          "offers": {
+            "@type": "Offer",
+            "price": "149.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/PreOrder",
+            "priceValidUntil": "2024-12-31"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -215,23 +253,6 @@
                         I'm just starting my journey in the business world, and I'm excited to share every step with you. Together, we can learn, grow, and inspire each other. I believe that authentic connections and shared experiences are what truly matter. If something I share sparks an idea or helps you in some way, then we're both winning.
                     </p>
                     
-                    <!-- Projects Section -->
-                    <div class="projects-section">
-                        <h3 class="projects-title">My Projects</h3>
-                        <div class="projects-links">
-                            <a href="https://tracemate.art" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="trace mate SaaS" class="project-image">
-                                <div class="project-content">
-                                    <div class="project-info">
-                                        <span class="project-title">trace mate - SaaS</span>
-                                        <span class="project-status">Not Completed</span>
-                                    </div>
-                                    <i class="fas fa-external-link-alt"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
                     <div class="action-buttons">
                         <a href="https://wa.me/21658415520" class="ask-question-btn">Ask me a question</a>
                     </div>
@@ -247,49 +268,115 @@
         </div>
     </main>
 
-    <!-- Stay On Section -->
-    <section class="stay-on-section">
+    <!-- Products & Services Section -->
+    <section class="products-services-section">
         <div class="container">
-            <div class="stay-on-content">
-                <h2 class="stay-on-title">Share the Journey</h2>
-                <div class="stay-on-grid">
-                    <div class="stay-on-card">
-                        <div class="card-icon">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h3>Learning</h3>
-                        <p>Every day brings new lessons and discoveries. I share my learning experiences, mistakes, and breakthroughs so we can all grow together.</p>
+            <h2 class="section-title">Digital Products & SaaS Solutions</h2>
+            <p class="section-description">Explore our range of digital products and software-as-a-service solutions designed to help entrepreneurs and businesses thrive in today's digital landscape.</p>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-robot"></i>
                     </div>
-                    
-                    <div class="stay-on-card">
-                        <div class="card-icon">
-                            <i class="fas fa-heart"></i>
+                    <h3 class="product-title">TraceMate - Drawing Tool</h3>
+                    <p class="product-description">A tool to help people draw better through tracing with their phone camera. Improve your drawing skills and create beautiful artwork with ease.</p>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="price-amount">$10.00</span>
+                            <span class="price-period">/ month</span>
                         </div>
-                        <h3>Authenticity</h3>
-                        <p>Real stories, real challenges, real solutions. No filters, no pretense - just honest sharing about the entrepreneurial journey.</p>
-                    </div>
-                    
-                    <div class="stay-on-card">
-                        <div class="card-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <h3>Community</h3>
-                        <p>Building connections with like-minded people who believe in supporting each other's dreams and celebrating each other's wins.</p>
-                    </div>
-                    
-                    <div class="stay-on-card">
-                        <div class="card-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3>Inspiration</h3>
-                        <p>If my journey can inspire even one person to take that first step or try something new, then every challenge was worth it.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Camera-based tracing</li>
+                            <li><i class="fas fa-check"></i> Multiple drawing modes</li>
+                            <li><i class="fas fa-check"></i> Save and share artwork</li>
+                            <li><i class="fas fa-check"></i> Drawing tutorials</li>
+                        </ul>
+                        <a href="https://tracemate.art" class="product-cta" target="_blank">Get Started</a>
                     </div>
                 </div>
                 
-                <div class="stay-on-cta">
-                    <p class="cta-text">Want to share ideas or just have a genuine conversation?</p>
-                    <a href="https://wa.me/21658415520" class="cta-button">Let's Connect</a>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="product-title">Digital Entrepreneur's Toolkit</h3>
+                    <p class="product-description">A comprehensive digital guide with templates, strategies, and tools for launching and scaling your online business. Includes lifetime access to future updates.</p>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="price-amount">$149.99</span>
+                            <span class="price-period">one-time</span>
+                        </div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> 200+ page digital guidebook</li>
+                            <li><i class="fas fa-check"></i> 25 editable templates</li>
+                            <li><i class="fas fa-check"></i> 10 video tutorials</li>
+                            <li><i class="fas fa-check"></i> Private community access</li>
+                        </ul>
+                        <a href="#" class="product-cta">Coming Soon</a>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="custom-solutions">
+                <h3>Need Custom SaaS Development?</h3>
+                <p>We offer custom software development services tailored to your specific business needs. From concept to deployment, we can build scalable, secure, and user-friendly solutions that help your business grow.</p>
+                <a href="https://wa.me/21658415520?text=I'm%20interested%20in%20discussing%20custom%20SaaS%20development" class="custom-solutions-cta">Request Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Information Section -->
+    <section class="checkout-process-section">
+        <div class="container">
+            <h2 class="section-title">How to Purchase</h2>
+            <p class="section-description">We've made the payment process simple, secure, and convenient for you.</p>
+            
+            <div class="checkout-steps">
+                <div class="checkout-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Select Your Digital Product</h3>
+                        <p>Browse our offerings above and click the "Get Started" or "Purchase Now" button on the product you're interested in.</p>
+                    </div>
+                </div>
+                
+                <div class="checkout-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Complete Your Purchase</h3>
+                        <p>After selecting your product, you'll be directed to our secure checkout page where you can enter your payment details.</p>
+                    </div>
+                </div>
+                
+                <div class="checkout-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Access Your Purchase</h3>
+                        <p>For digital products, you'll receive an immediate download link via email. For SaaS subscriptions, you'll receive login credentials to access your account.</p>
+                    </div>
+                </div>
+                
+                <div class="checkout-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Ongoing Support</h3>
+                        <p>All purchases include access to our customer support team. You'll receive regular updates and new features as part of your subscription.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subscription-info">
+                <h3>Subscription Information</h3>
+                <p>Our products are billed on a monthly or annual basis with easy cancellation options.</p>
+                <ul class="subscription-features">
+                    <li><i class="fas fa-calendar-alt"></i> Monthly/annual billing</li>
+                    <li><i class="fas fa-percentage"></i> 20% off annual plans</li>
+                    <li><i class="fas fa-times-circle"></i> Cancel anytime</li>
+                    <li><i class="fas fa-sync"></i> Easy plan changes</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -297,6 +384,34 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 class="footer-title">NEXES VISION</h3>
+                    <p>Creating innovative digital solutions</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i>+216 58 415 520</p>
+                        <p><i class="fas fa-envelope"></i>contact@nexesvision.online</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3 class="footer-title">Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-policies">
+                    <a href="#">Privacy</a> • 
+                    <a href="#">Terms</a> • 
+                    <a href="#">Refund</a>
+                </div>
+                <p class="copyright">© 2023 NEXES VISION</p>
+            </div>
         </div>
     </footer>
 </body>
